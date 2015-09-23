@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace project_tetris
 {
-    class Program
+    class util
     {
-        static void Main(string[] args)
+    
+        public string nextBlock( Random rng)
         {
-            Random rng = new Random();
-           
+            string[] piece = { "L", "I", "O", "T", "S", "Z", "J" };
+            return piece[rng.Next(8)];
         }
     }
 }
